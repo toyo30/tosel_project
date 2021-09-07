@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/check_score.css">
+    <!-- 밑의 link가 뭔지 궁금 -->
+    <link rel="apple-touch-icon" href="#">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>성적표 확인 페이지</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <header class="head_box">
+                <div class="head_info">
+                    <h1 class="head_title">TOSEL 성적표 확인 페이지</h1>
+                    <p class="head_text">정기, 가정 시험을 통해 취득한<br>점수를 확인해보세요.</p>
+                    
+                </div>
+                <img src="./img/reading_book_girl.png" alt="책읽는 여성" class="head_img">
+                <!-- background냐 img냐 바뀌는 값이면 img 안 바뀌는 값이면 background -->
+            </header>
+        </div>
+
+        <div id="container">
+
+
+            <ul class="arr_box">
+                <li class="arr_area">
+                    <button class="arr_btn date">
+                        <span class="arr_text date">시험날짜순</span>
+                        <img src="./img/up_arrow.png" alt="윗방향화살표" class="ind_up">
+                        <img src="./img/down_arrow.png" alt="아래방향화살표" class="ind_down">
+                        <img src="./img/unclick_rectangle.png" alt="클릭안된사각형" class="ind_rec">
+                    </button>
+                </li>
+
+                <li class="arr_area">
+                    <button class="arr_btn date">
+                        <span class="arr_text level">레벨순</span>
+                        <img src="./img/up_arrow.png" alt="윗방향화살표" class="ind_up">
+                        <img src="./img/down_arrow.png" alt="아래방향화살표" class="ind_down">
+                        <img src="./img/unclick_rectangle.png" alt="클릭안된사각형" class="ind_rec">
+                    </button>
+                </li>
+
+                <li class="arr_area">
+                    <button class="arr_btn date">
+                        <span class="arr_text score">성적순</span>
+                        <img src="./img/up_arrow.png" alt="윗방향화살표" class="ind_up">
+                        <img src="./img/down_arrow.png" alt="아래방향화살표" class="ind_down">
+                        <img src="./img/unclick_rectangle.png" alt="클릭안된사각형" class="ind_rec">
+                    </button>
+                </li>
+            </ul>
+
+            <section class="result_box" data-name="81회 정기시험" data-level="High-Junior" data-score="90.0">
+                <span class="background_number">2</span>
+                <div class="info_test">
+                    <h2 class="info_test_num">77회 정기시험</h2>  
+					<p class="info_level">Pre-Starter</p>
+					<p class="info_date">2020.05.15</p>
+                </div>
+
+                <div class="info_result">
+                    <div class="result_sec">
+                        <span class="sec">sec1</span>
+                        <span class="sec_result">50.0</span>
+                    </div>
+                    <div class="result_sec">
+                        <span class="sec">sec2</span>
+                        <span class="sec_result">45.0</span>
+                    </div>
+                </div>
+
+                <h3 class="score_text">95</h3>
+            
+            </section>
+
+            <section class="result_box" data-name="81회 정기시험" data-level="High-Junior" data-score="90.0">
+                <span class="background_number">2</span>
+                <div class="info_test">
+                    <h2 class="info_test_num">79회 정기시험</h2>  
+					<p class="info_level">Pre-Starter</p>
+					<p class="info_date">2020.05.15</p>
+                </div>
+
+                <div class="info_result">
+                    <div class="result_sec">
+                        <span class="sec">sec1</span>
+                        <span class="sec_result">50.0</span>
+                    </div>
+                    <div class="result_sec">
+                        <span class="sec">sec2</span>
+                        <span class="sec_result">45.0</span>
+                    </div>
+                </div>
+
+                <h3 class="score_text">95</h3>
+                
+            </section>
+
+            <section class="result_box" data-name="81회 정기시험" data-level="High-Junior" data-score="90.0">
+                <span class="background_number">2</span>
+                <div class="info_test">
+                    <h2 class="info_test_num">78회 정기시험</h2>  
+					<p class="info_level">Pre-Starter</p>
+					<p class="info_date">2020.05.15</p>
+                </div>
+
+                <div class="info_result">
+                    <div class="result_sec">
+                        <span class="sec">sec1</span>
+                        <span class="sec_result">50.0</span>
+                    </div>
+                    <div class="result_sec">
+                        <span class="sec">sec2</span>
+                        <span class="sec_result">45.0</span>
+                    </div>
+                </div>
+
+                <h3 class="score_text">95</h3>
+        
+            </section>
+
+            <section class="result_box" data-name="81회 정기시험" data-level="High-Junior" data-score="90.0">
+                <span class="background_number">2</span>
+                <div class="info_test">
+                    <h2 class="info_test_num">81회 정기시험</h2>  
+					<p class="info_level">Pre-Starter</p>
+					<p class="info_date">2020.05.15</p>
+                </div>
+
+                <div class="info_result">
+                    <div class="result_sec">
+                        <span class="sec">sec1</span>
+                        <span class="sec_result">50.0</span>
+                    </div>
+                    <div class="result_sec">
+                        <span class="sec">sec2</span>
+                        <span class="sec_result">45.0</span>
+                    </div>
+                </div>
+
+                
+                <h3 class="score_text">95</h3>
+            
+                
+            </section>
+
+            <section class="result_box" data-name="81회 정기시험" data-level="High-Junior" data-score="90.0">
+                <span class="background_number">2</span>
+                <div class="info_test">
+                    <h2 class="info_test_num">80회 정기시험</h2>  
+					<p class="info_level">Pre-Starter</p>
+					<p class="info_date">2020.05.15</p>
+                </div>
+
+                <div class="info_result">
+                    <div class="result_sec">
+                        <span class="sec">sec1</span>
+                        <span class="sec_result">50.0</span>
+                    </div>
+                    <div class="result_sec">
+                        <span class="sec">sec2</span>
+                        <span class="sec_result">45.0</span>
+                    </div>
+                </div>
+
+                <h3 class="score_text">95</h3>
+              
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

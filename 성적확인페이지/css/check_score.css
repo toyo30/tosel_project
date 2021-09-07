@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* reset */
+
+body, div, h1, h2, h3, p, ul, 
+li, header, section, button, img {
+    margin:0; 
+    padding:0; 
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    color:#2D4162;
+}
+
+body {
+    line-height: 1;
+}
+
+ul{
+    list-style:none;
+}   
+
+button {
+    background:transparent; cursor:pointer; overflow:visible; 
+}
+
+
+/* 전체 페이지 설정 */
+
+body {
+    min-width: 360px;
+    /* 페이지 비율 유지하면서 작아지게 만들기 */
+}
+
+#wrap {
+    width: 360px;
+    height: 800px;
+    margin: 0 auto;
+    background: #ECF0F3;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.head_box {
+    width: 300px;
+    height: 118px;
+    margin: 0 auto;
+    background: linear-gradient(269.56deg, #FFFFFF 0.09%, #ECF0F3 95.21%);
+    box-shadow: 1.6678px 1.6678px 4.16949px #D1D9E6, -1.6678px -1.6678px 4.16949px #FFFFFF;
+    border-radius: 8.33898px;
+}
+
+.head_info {
+    float:left;
+    width: 137px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.head_box::after{
+    content: '';
+    clear:both;
+    display:block;
+}
+
+.head_title {
+    width: 137px;
+    height: 17px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.head_text {
+    height: 28px;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #2D4162;
+    word-break: break-all;
+}
+
+.head_img {
+    width: 126px;
+    height: 88.16px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/* button_list*/
+
+.arr_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.arr_btn {
+    position: relative;
+    display: flex;
+    width: 93px;
+    height: 26px;
+    background: #ECF0F3;
+    box-shadow: 1.75557px 1.75557px 4.38892px rgba(209, 217, 230, 0.5), -1.75557px -1.75557px 4.38892px rgba(255, 255, 255, 0.5);
+    border-radius: 8.42102px;
+    box-sizing: border-box;
+    line-height: 26px;
+}
+
+.arr_text {
+    display: block;
+    width: 80px;
+    height: 16px;
+    margin: 6px 7px 4px 6px;
+    font-weight: 500;
+    font-size: 10.5263px;
+    line-height: 15px;
+    color: #A0AAB9;
+    text-align: left;
+}
+
+.ind_up, .ind_down {
+    display:none;
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    top: 11px;
+    right: 10px;
+}
+
+.ind_up {
+    background: #F77272;
+    transform: rotate(-180deg);
+}
+
+.ind_down {
+    background: #669AEE;
+}
+
+.ind_rec {
+    position: absolute;
+    width: 2.4px;
+    height: 2.4px;
+    background: #A0AAB9;
+    transform: matrix(0.71, 0.7, -0.72, 0.71, 0, 0);
+    top: 11.86px;
+    right: 10.77px;
+}
+
+
+
+/* section */
+
+.result_box {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 80px;
+    margin-top: 12px;
+    background: linear-gradient(269.56deg, #FFFFFF 0.09%, #ECF0F3 95.21%);
+    box-shadow: 1.6678px 1.6678px 4.16949px #D1D9E6, -1.6678px -1.6678px 4.16949px #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    /* background-image: url(../img/2.png) no-repeat ;
+    background-size: 52px 68px; 
+    background-position: bottom 12px left 18px 
+    background로 줄려고 했는데 왜 안 되는가?*/
+}
+
+.background_number {
+    position: absolute;
+    display: block;
+    width: 52px;
+    height: 68px;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 88.4536px;
+    opacity: 0.15;
+    bottom: 12px;
+    left: 18px; 
+    /* 숫자 2에 컬러값주는 거 밑에 코드를 이해해보자. 
+    숫자 2모양이 다른 것 같은데.....*/
+    background: linear-gradient(160deg, #ff78e8 40%,#2A017B,#9E46AB);
+	color: transparent; 
+    -webkit-background-clip: text;
+    z-index: -1px;
+    align-items: center;
+
+}
+
+.info_test {
+    width: 110px;
+    margin: 14px auto auto 18px;
+}
+
+.info_test_num {
+    height: 24px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.info_level {
+    height: 12px;
+    font-family: Roboto;
+    /* 불필요한 코드는 빼는 게 나을까 아니면 다 넣어주는 게 나을까, 기본값*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(45, 65, 98, 0.8);
+}
+
+
+.info_date {
+    margin-top: 4px;
+    height: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(45, 65, 98, 0.7);
+}
+
+
+/* section sec1 50.0 sec2 45.0 95 다양한 방법으로 구현하기*/
+
+/* position absolute 사용 */
+
+.info_result {
+    position: absolute;
+    width: 54.85px;
+    height: 31px;
+    top: 35px;
+    right: 71.15px;
+}
+
+.sec {
+    display:inline-block;
+    /* margin-bottom: 1.79px;
+    margin-right:7.75px; */
+    width: 22.65px;
+    height: 13.12px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9.53846px;
+    line-height: 13px;
+    color: #2D4162;
+    opacity: 0.7;
+}
+
+.sec_result {
+    width: 24.44px;
+    height: 16.1px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11.9231px;
+    line-height: 16px;
+    color: #2D4162;
+}
+
+.score_text {
+    position: absolute;
+    width: 46px;
+    height: 53.08px;
+    bottom: 6px;
+    right: 23px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38.9231px;
+    line-height: 53px;
+    background: linear-gradient(160deg, #ff78e8 40%,#2A017B,#9E46AB);
+	color: transparent; 
+    -webkit-background-clip: text;
+}
+
+/* 
+.result_sec {
+    float: left;
+}
+
+.info_result::after{
+    content: '';
+    display: block;
+    clear:both;
+} */
